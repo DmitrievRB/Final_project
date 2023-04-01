@@ -7,8 +7,11 @@ class Setting:
     VALID_PASSWORD = "J2J-Nqq-ZrS-vCb"
     REPET_VALID_PASSWORD = "J2J-Nqq-ZrS-vCb"
     FIRST_NAME = "Роман"
+    POSITIVE_FIRST_NAME = ["Роман", "Ро", "Р-", "АнастасияЕкатеринаАлекфывапрук"]
+    POSITIVE_LAST_NAME = ["Одинцов", "Од", "О-"]
     LAST_NAME = "Одинцов"
     PERSONAL_ACCOUNT = "rtkid_1680176528575"
+    REGION = "Крым"
     REQ_ELEMENTS_REG = ["Имя", "Фамилия", "Регион", "E-mail или мобильный телефон", "Пароль", "Подтверждение пароля"]
     REQ_ELEMENTS_AUTH = ["Номер", "Почта", "Логин", "Лицевой счет"]
     PLACEHOLDER_NAME = ["Мобильный телефон", "Электронная почта", "Логин", "Лицевой счёт", "Пароль"]

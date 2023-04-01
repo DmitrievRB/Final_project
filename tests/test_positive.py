@@ -2,6 +2,7 @@ from page.registr_page import RegistrPage
 from page.locators import Locators
 from page.auth_page import AuthPage
 from settings import *
+from time import sleep
 
 
 def test_check_elements_reg_form(browser):
@@ -14,7 +15,7 @@ def test_check_elements_reg_form(browser):
 
 
 def test_reg_content_left_page(browser):
-    # HBCPRR-12 Содержимое левого блока формы регистрации
+    # HBCPRR-14 Содержимое левого блока формы регистрации
     rt_reg_page = RegistrPage(browser)
     rt_reg_page.go_to_site()
     rt_reg_page.click_link_reg()
@@ -120,3 +121,26 @@ def test_auth_content_right_page(browser):
     assert "Почта" in elements
     assert "Логин" in elements
     assert "Лицевой счёт" in elements
+
+
+def test_reg_user_valid_first_name(browser, first_name):
+    first_name = Setting.FIRST_NAME
+    # HBCPRR-15 Регистрация пользователя  с валидными данными имени
+    rt_reg_page = RegistrPage(browser)
+    rt_reg_page.go_to_site()
+    rt_reg_page.click_link_reg()
+    rt_reg_page.enter_last_name()
+    rt_reg_page.enter_email()
+    rt_reg_page.enter_password_reg()
+    rt_reg_page.click_btn_reg()
+    assert rt_reg_page.find_element(Locators.email_confirm).text == "Подтверждение email"
+
+
+def test_region(browser):
+    rt_reg_page = RegistrPage(browser)
+    rt_reg_page.go_to_site()
+    rt_reg_page.click_link_reg()
+    rt_reg_page.enter_region()
+    rt_reg_page.click_region()
+    sleep(10)
+    assert rt_reg_page.find_element(Locators.email_confirm).text == "Подтверждение email"

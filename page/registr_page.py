@@ -4,6 +4,9 @@ from settings import *
 
 
 class RegistrPage(BasePage):
+    def __init__(self, driver, timeout=10, ):
+        super().__init__(driver, timeout)
+        # self.first_name = driver.f
 
     def click_link_reg(self):
         reg_link = self.find_element(Locators.reg_link)
@@ -58,3 +61,16 @@ class RegistrPage(BasePage):
         phone.click()
         phone.send_keys(Setting.VALID_PHONE)
         return phone
+
+    def enter_region(self):
+        region = self.find_element(Locators.in_region)
+        region.click()
+        region.clear()
+        region.send_keys(Setting.REGION)
+        region.click()
+        return region
+
+    def click_region(self):
+        region = self.find_element(Locators.out_region)
+        region.click()
+        return region

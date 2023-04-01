@@ -5,9 +5,10 @@ from settings import *
 
 
 class BasePage:
-    def __init__(self, driver):
+    def __init__(self, driver, timeout=10):
         self.driver = driver
         self.base_url = Setting.BASE_URL
+        self.driver.implicitly_wait(timeout)
 
     def go_to_site(self):
         return self.driver.get(self.base_url)

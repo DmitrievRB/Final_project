@@ -7,7 +7,10 @@ class Locators:
     privat_data = (By.XPATH, "//p[contains(text(),'Личные данные')]")
     first_name = (By.NAME, "firstName")
     last_name = (By.NAME, "lastName")
-    region = (By.XPATH, "//span[contains(text(),'Регион')]")
+    region_text = (By.XPATH, "//span[contains(text(),'Регион')]")
+    out_region = (By.CSS_SELECTOR, ".rt-select__list-item")
+    in_region = (By.XPATH,
+                 "//div[@class='rt-input-container rt-select__input']//input[@class='rt-input__input rt-input__input--rounded rt-input__input--orange']")
     reg_mail_phone = (By.XPATH, "//input[@id='address']")
     reg_password = (By.XPATH, "//input[@id='password']")
     confirm_password = (By.XPATH, "//input[@id='password-confirm']")
