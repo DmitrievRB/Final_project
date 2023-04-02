@@ -19,7 +19,9 @@ class Locators:
     reg_right_elements = (By.CLASS_NAME, "rt-input--rounded")
     reg_left_elements = (By.ID, "page-left")
     reg_email_confirm = (By.XPATH, "//section/div/div/h1")
-    reg_phone_confirm = (By.XPATH, "//h1[contains(text(),'Подтверждение телефона')]")
+    reg_confirm = (By.XPATH, "//h1[contains(text(),'Подтверждение')]")
+    error_password = (By.CLASS_NAME, "rt-input-container__meta.rt-input-container__meta--error")
+    error_confirm_password = (By.CLASS_NAME, "rt-input-container__meta.rt-input-container__meta--error")
 
     # Локаторы страницы авторизации
     auth_tab_email = (By.XPATH, "//div[@id='t-btn-tab-mail']")
@@ -35,3 +37,4 @@ class Locators:
     auth_placeholder_email_passw = (By.XPATH, '//span[@class="rt-input__mask-start"]')
     # Прочие страницы
     private_cabinet = (By.XPATH, "//a[@id='lk-btn']")
+    private_cabinet_quit = (By.XPATH, "//div[@id='logout-btn']")

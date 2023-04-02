@@ -4,13 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc1aab99-c14f-4071-abbc-6ff269dda62f" name="Changes" comment="v1">
-      <change afterPath="$PROJECT_DIR$/.idea/Final_project.iml" afterDir="false" />
+    <list default="true" id="bc1aab99-c14f-4071-abbc-6ff269dda62f" name="Changes" comment="final positive test">
+      <change afterPath="$PROJECT_DIR$/pytest.ini" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/page/auth_page.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/page/base_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/page/base_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/conftest.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/page/locators.py" beforeDir="false" afterPath="$PROJECT_DIR$/page/locators.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/page/registr_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/page/select_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/page/select_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/page/select_page.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/test_positive.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_positive.py" afterDir="false" />
     </list>
@@ -64,7 +64,7 @@
       <recent name="C:\Users\merlinrd\Documents\MyProject\Python_Training\project_28\tests" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.pytest for test_positive.test_auth_content_right_page">
+  <component name="RunManager" selected="Python tests.pytest for test_positive.test_auth_user_valid_email">
     <configuration name="test_positive" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="project_28" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -172,10 +172,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.pytest for test_positive.test_auth_content_right_page" />
-        <item itemvalue="Python tests.pytest for test_positive.test_auth_content_left_page" />
         <item itemvalue="Python tests.pytest for test_positive.test_auth_user_valid_email" />
+        <item itemvalue="Python tests.pytest for test_positive.test_auth_content_left_page" />
         <item itemvalue="Python tests.Python tests for test_positive.test_reg_user_valid_email" />
+        <item itemvalue="Python tests.pytest for test_positive.test_auth_content_right_page" />
         <item itemvalue="Python tests.pytest for test_positive.test_reg_content_left_page" />
       </list>
     </recent_temporary>
@@ -216,7 +216,7 @@
       <workItem from="1680363777858" duration="2343000" />
       <workItem from="1680367108348" duration="5510000" />
       <workItem from="1680373213745" duration="3415000" />
-      <workItem from="1680403695463" duration="6705000" />
+      <workItem from="1680403695463" duration="19422000" />
     </task>
     <task id="LOCAL-00001" summary="предварительная загрузка файлов проекта">
       <created>1680267111656</created>
@@ -239,7 +239,21 @@
       <option name="project" value="LOCAL" />
       <updated>1680358538247</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="final positive test">
+      <created>1680410455351</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1680410455351</updated>
+    </task>
+    <task id="LOCAL-00005" summary="final positive test">
+      <created>1680410469842</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1680410469843</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -259,16 +273,17 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="предварительная загрузка файлов проекта" />
     <MESSAGE value="v1" />
-    <option name="LAST_COMMIT_MESSAGE" value="v1" />
+    <MESSAGE value="final positive test" />
+    <option name="LAST_COMMIT_MESSAGE" value="final positive test" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Final_project$pytest_for_test_positive_test_auth_content_right_page.coverage" NAME="pytest for test_positive.test_auth_content_right_page Coverage Results" MODIFIED="1680410079987" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
-    <SUITE FILE_PATH="coverage/Final_project$pytest_for_test_positive_test_auth_content_left_page.coverage" NAME="pytest for test_positive.test_auth_content_left_page Coverage Results" MODIFIED="1680409944634" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
-    <SUITE FILE_PATH="coverage/Final_project$pytest_for_test_positive_test_auth_user_valid_email.coverage" NAME="pytest for test_positive.test_auth_user_valid_email Coverage Results" MODIFIED="1680408932755" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/Final_project$pytest_for_test_positive_test_auth_content_left_page.coverage" NAME="pytest for test_positive.test_auth_content_left_page Coverage Results" MODIFIED="1680415224863" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/Final_project$pytest_for_test_positive_test_auth_user_valid_email.coverage" NAME="pytest for test_positive.test_auth_user_valid_email Coverage Results" MODIFIED="1680417171032" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
     <SUITE FILE_PATH="coverage/project_28$main.coverage" NAME="main Coverage Results" MODIFIED="1680092009254" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/project_28$.coverage" NAME=" Coverage Results" MODIFIED="1680266734251" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
     <SUITE FILE_PATH="coverage/Final_project$pytest_for_test_positive_test_reg_content_left_page.coverage" NAME="pytest for test_positive.test_reg_content_left_page Coverage Results" MODIFIED="1680374712796" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
-    <SUITE FILE_PATH="coverage/Final_project$.coverage" NAME=" Coverage Results" MODIFIED="1680407453867" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/Final_project$.coverage" NAME=" Coverage Results" MODIFIED="1680412740376" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
   </component>
 </project>

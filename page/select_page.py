@@ -134,3 +134,9 @@ class SelectPage(BasePage):
         auth_enter = self.find_element(Locators.auth_btn_enter)
         auth_enter.click()
         return auth_enter
+
+    def auth_click_quit(self):
+        # Нажатие кнопки "Выход" в личном кабинете
+        auth_quit = self.find_element(Locators.private_cabinet_quit)
+        auth_quit.click()
+        return auth_quit
