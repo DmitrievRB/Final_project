@@ -5,10 +5,10 @@ class Setting:
     VALID_PHONE = "+79789897112"
     VALID_LOGIN = "hhjob1"
     VALID_PASSWORD = "J2J-Nqq-ZrS-vCb"
-    REPET_VALID_PASSWORD = "J2J-Nqq-ZrS-vCb"
+    CONFIRM_VALID_PASSWORD = "J2J-Nqq-ZrS-vCb"
     FIRST_NAME = "Роман"
     POSITIVE_FIRST_NAME = ["Роман", "Ро", "Р-", "АнастасияЕкатеринаАлекфывапрук"]
-    POSITIVE_LAST_NAME = ["Одинцов", "Од", "О-"]
+    POSITIVE_LAST_NAME = ["Одинцов", "Од", "О-", "АнастасияЕкатеринаАлекфывапрук"]
     LAST_NAME = "Одинцов"
     PERSONAL_ACCOUNT = "rtkid_1680176528575"
     REGION = "Крым"
