@@ -35,19 +35,19 @@ class SelectPage(BasePage):
         name.send_keys(first_name)
         return name
 
-    def enter_phone_email_reg(self, valid_phone_email):
+    def enter_phone_email_reg(self, phone_email):
         # Готовим поле для ввода номера телефона или почты
         email = self.find_element(Locators.reg_mail_phone)
-        email.send_keys(valid_phone_email)
+        email.send_keys(phone_email)
         return email
 
-    def enter_password_reg(self, valid_password, confirm_valid_password):
+    def enter_password_reg(self, reg_password, reg_confirm_password):
         password = self.find_element(Locators.reg_password)
         password.click()
-        password.send_keys(valid_password)
+        password.send_keys(reg_password)
         confirm_password = self.find_element(Locators.reg_confirm_password)
         confirm_password.click()
-        confirm_password.send_keys(confirm_valid_password)
+        confirm_password.send_keys(reg_confirm_password)
         return password, confirm_password
 
     def click_btn_reg(self):
@@ -105,8 +105,8 @@ class SelectPage(BasePage):
 
     def auth_content_right_page(self):
         # Получение правой части блока формы авторизации
-        righ_page = self.find_elements(Locators.auth_page_right)
-        elements = "".join([x.text for x in righ_page])
+        right_page = self.find_elements(Locators.auth_page_right)
+        elements = "".join([x.text for x in right_page])
         return elements
 
     def auth_placeholders(self):
@@ -140,3 +140,37 @@ class SelectPage(BasePage):
         auth_quit = self.find_element(Locators.private_cabinet_quit)
         auth_quit.click()
         return auth_quit
+
+    def error_reg_first_name(self):
+        # Получение ошибки регистрации имени
+        error_reg = self.find_element(Locators.error_fist_name)
+        error = error_reg.text
+        return error
+
+    def error_reg_last_name(self):
+        # Получение ошибки регистрации Фамилии
+        error_reg = self.find_element(Locators.error_last_name)
+        error = error_reg.text
+
+        return error
+
+    def error_reg_login(self):
+        # Получение ошибки регистрации в почте или телефоне
+        error_reg = self.find_element(Locators.error_login)
+        error = error_reg.text
+
+        return error
+
+    def error_reg_password(self):
+        # Получение ошибки регистрации в пароле
+        error_reg = self.find_element(Locators.error_password)
+        error = error_reg.text
+
+        return error
+
+    def error_reg_confirm_password(self):
+        error_reg = self.find_element(Locators.error_confirm_password)
+        error = error_reg.text
+
+        print(error)
+        return error

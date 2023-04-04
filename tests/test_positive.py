@@ -42,15 +42,15 @@ def test_reg_content_left_page(browser):
     ("О-", "фамилия символ и тире"),
     ("АнастасияЕкатеринаАлекфывапрук", "Фамилия из 30 символов")],
                          ids=["lName", "l2symbol", "lSymbol-", "l30symbol"])
-@pytest.mark.parametrize("valid_phone_email,expected_login", [
+@pytest.mark.parametrize("phone_email,expected_login", [
     (Setting.VALID_PHONE, "Телефон формата +7ХХХХХХХХХХ"),
     (Setting.VALID_EMAIL, "Email формата example@email.ru")],
                          ids=["Valid_Phone", "Valid_Name"])
-@pytest.mark.parametrize("valid_password", [Setting.VALID_PASSWORD, ], ids=["Valid_Password"])
-@pytest.mark.parametrize("confirm_valid_password", [Setting.CONFIRM_VALID_PASSWORD, ],
+@pytest.mark.parametrize("reg_password", [Setting.VALID_PASSWORD, ], ids=["Valid_Password"])
+@pytest.mark.parametrize("reg_confirm_password", [Setting.CONFIRM_VALID_PASSWORD, ],
                          ids=["Confirm_Valid_Password"])
-def test_reg_user_valid_email(browser, first_name, last_name, valid_phone_email,
-                              valid_password, confirm_valid_password, expected_login, expected_last, expected_first):
+def test_reg_user_valid_data(browser, first_name, last_name, phone_email,
+                             reg_password, reg_confirm_password, expected_login, expected_last, expected_first):
     # HBCPRR-1 Регистрация пользователя по телефону с валидными данными
     # HBCPRR-3 Регистрация пользователя по email с валидными данными
     # HBCPRR-15 Регистрация пользователя  с валидными данными имени
@@ -60,8 +60,8 @@ def test_reg_user_valid_email(browser, first_name, last_name, valid_phone_email,
     page.click_link_reg()
     page.enter_first_name_reg(first_name)
     page.enter_last_name_reg(last_name)
-    page.enter_phone_email_reg(valid_phone_email)
-    page.enter_password_reg(valid_password, confirm_valid_password)
+    page.enter_phone_email_reg(phone_email)
+    page.enter_password_reg(reg_password, reg_confirm_password)
     page.click_btn_reg()
     sleep(5)
     assert "Подтверждение" in page.find_element(Locators.reg_confirm).text
@@ -84,7 +84,7 @@ def test_auth_user_valid_email(browser, valid_login_date, valid_password):
     page.auth_enter_login_data(valid_login_date)
     page.auth_enter_password(valid_password)
     page.auth_click_enter()
-    sleep(3)
+    sleep(5)
     assert page.find_element(Locators.private_cabinet).text == "Личный кабинет"
     page.auth_click_quit()
 
@@ -119,7 +119,7 @@ def test_auth_content_right_page(browser):
     assert placeholder_phone[0] in Setting.PLACEHOLDER_NAME
     assert placeholder_email[0] in Setting.PLACEHOLDER_NAME
     assert placeholder_email[1] in Setting.PLACEHOLDER_NAME
-    assert "Номер" in elements
+    assert "Телефон" in elements
     assert "Почта" in elements
     assert "Логин" in elements
     assert "Лицевой счёт" in elements

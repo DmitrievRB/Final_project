@@ -20,6 +20,9 @@ class Locators:
     reg_left_elements = (By.ID, "page-left")
     reg_email_confirm = (By.XPATH, "//section/div/div/h1")
     reg_confirm = (By.XPATH, "//h1[contains(text(),'Подтверждение')]")
+    error_fist_name = (By.CLASS_NAME, "rt-input-container__meta.rt-input-container__meta--error")
+    error_last_name = (By.CLASS_NAME, "rt-input-container__meta.rt-input-container__meta--error")
+    error_login = (By.CLASS_NAME, "rt-input-container__meta.rt-input-container__meta--error")
     error_password = (By.CLASS_NAME, "rt-input-container__meta.rt-input-container__meta--error")
     error_confirm_password = (By.CLASS_NAME, "rt-input-container__meta.rt-input-container__meta--error")
 
