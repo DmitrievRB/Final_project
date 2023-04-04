@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc1aab99-c14f-4071-abbc-6ff269dda62f" name="Changes" comment="Добавлена документация по проекту">
+    <list default="true" id="bc1aab99-c14f-4071-abbc-6ff269dda62f" name="Changes" comment="Добавлен файл readme">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/conftest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_negative.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_negative.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_positive.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_positive.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -220,7 +223,7 @@
       <workItem from="1680489769108" duration="6961000" />
       <workItem from="1680533865689" duration="15018000" />
       <workItem from="1680609809611" duration="126000" />
-      <workItem from="1680609956983" duration="2784000" />
+      <workItem from="1680609956983" duration="7791000" />
     </task>
     <task id="LOCAL-00001" summary="предварительная загрузка файлов проекта">
       <created>1680267111656</created>
@@ -285,7 +288,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680610233386</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Добавлен файл readme">
+      <created>1680612810146</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1680612810146</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -310,7 +320,8 @@
     <MESSAGE value="добавлены фикстуры и файл с тест-кейсами" />
     <MESSAGE value="автотесты закончены" />
     <MESSAGE value="Добавлена документация по проекту" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавлена документация по проекту" />
+    <MESSAGE value="Добавлен файл readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавлен файл readme" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">

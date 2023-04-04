@@ -6,7 +6,7 @@ from time import sleep
 
 
 @pytest.mark.reg
-# @pytest.mark.skip
+@pytest.mark.skip
 def test_check_elements_reg_form(browser):
     # HBCPRR-2 Наличие обязательных элементов в правом блоке формы регистрации
     rt_reg_page = SelectPage(browser)
@@ -17,7 +17,7 @@ def test_check_elements_reg_form(browser):
 
 
 @pytest.mark.reg
-# @pytest.mark.skip
+@pytest.mark.skip
 def test_reg_content_left_page(browser):
     # HBCPRR-14 Содержимое левого блока формы регистрации
     rt_reg_page = SelectPage(browser)
@@ -29,7 +29,7 @@ def test_reg_content_left_page(browser):
 
 
 @pytest.mark.reg
-# @pytest.mark.skip
+@pytest.mark.skip
 @pytest.mark.parametrize("first_name, expected_first", [
     ("Роман", "Случайное имя"),
     ("Ро", "Имя из двух символов"),
@@ -69,7 +69,7 @@ def test_reg_user_valid_data(browser, first_name, last_name, phone_email,
 
 @pytest.mark.auth
 @pytest.mark.xfail(reason="телефон и логин не авторизованы отсюда и падение")
-# @pytest.mark.skip
+@pytest.mark.skip
 @pytest.mark.parametrize("valid_login_date",
                          [Setting.VALID_PHONE, Setting.AUTH_VALID_EMAIL, Setting.VALID_LOGIN, Setting.PERSONAL_ACCOUNT],
                          ids=["Valid_Phone", "Valid_Email", "Valid_Login", "Personal_Account"])

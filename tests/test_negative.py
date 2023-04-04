@@ -40,7 +40,7 @@ def test_reg_user_invalid_last_name(browser, last_name, phone_email=Setting.VALI
     page.enter_password_reg(valid_password, confirm_valid_password)
     page.click_btn_reg()
 
-    sleep(5)
+    sleep(5)  # Для обхода блокировки при тестировании
     assert page.error_reg_last_name() in Setting.ERROR_VALIDATION
 
 
@@ -73,6 +73,12 @@ def test_reg_user_invalid_password(browser, reg_password, last_name=Setting.FIRS
                                    first_name=Setting.FIRST_NAME,
                                    phone_email=Setting.VALID_PHONE,
                                    reg_confirm_password=Setting.CONFIRM_VALID_PASSWORD):
+    # HBCPRR-21 Регистрация с невалидными данными пароля(пустое поле)
+    # HBCPRR-23 Регистрация с невалидными данными пароля(менее 8 символов)
+    # HBCPRR-24 Регистрация с невалидными данными пароля(нет заглавных букв)
+    # HBCPRR-25 Регистрация с невалидными данными пароля(нет прописных букв)
+    # HBCPRR-26 Регистрация с невалидными данными пароля(нет цифр или спецсмволов)
+    # HBCPRR-27 Регистрация с невалидными данными пароля (пароль длинной 255 символов)
     page = SelectPage(browser)
     page.go_to_site()
     page.click_link_reg()
@@ -93,6 +99,7 @@ def test_reg_user_invalid_confirm_password(browser, reg_confirm_password, last_n
                                            first_name=Setting.FIRST_NAME,
                                            phone_email=Setting.VALID_PHONE,
                                            reg_password=Setting.VALID_PASSWORD):
+    # HBCPRR-22 Регистрация с невалидными данными подтверждение пароля
     page = SelectPage(browser)
     page.go_to_site()
     page.click_link_reg()

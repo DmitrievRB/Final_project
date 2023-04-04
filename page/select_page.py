@@ -25,6 +25,7 @@ class SelectPage(BasePage):
         return elements
 
     def enter_first_name_reg(self, first_name):
+        # Передаем значение в поле ввода имя
         name = self.find_element(Locators.reg_first_name)
         name.send_keys(first_name)
         return name
@@ -42,6 +43,7 @@ class SelectPage(BasePage):
         return email
 
     def enter_password_reg(self, reg_password, reg_confirm_password):
+        # Передаем значение в поле ввода пароля и подтверждения
         password = self.find_element(Locators.reg_password)
         password.click()
         password.send_keys(reg_password)
@@ -51,28 +53,17 @@ class SelectPage(BasePage):
         return password, confirm_password
 
     def click_btn_reg(self):
+        # Нажимаем кнопку Зарегистрироваться
         btn = self.find_element(Locators.reg_btn_register)
         btn.click()
         return btn
 
     def enter_phone_reg(self):
+        # Передаем значение в поле ввода номера телефона или почты
         phone = self.find_element(Locators.reg_mail_phone)
         phone.click()
         phone.send_keys(Setting.VALID_PHONE)
         return phone
-
-    def enter_region_reg(self):
-        region = self.find_element(Locators.reg_in_region)
-        region.click()
-        region.clear()
-        region.send_keys(Setting.REGION)
-        region.click()
-        return region
-
-    def click_region(self):
-        region = self.find_element(Locators.reg_out_region)
-        region.click()
-        return region
 
     def auth_click_tab_email(self):
         # Клик по табу почта
@@ -169,8 +160,8 @@ class SelectPage(BasePage):
         return error
 
     def error_reg_confirm_password(self):
+        # Получение ошибки регистрации в подтверждении пароля
         error_reg = self.find_element(Locators.error_confirm_password)
         error = error_reg.text
 
-        print(error)
         return error
