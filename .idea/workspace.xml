@@ -4,15 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc1aab99-c14f-4071-abbc-6ff269dda62f" name="Changes" comment="добавлены фикстуры и файл с тест-кейсами">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_negative.py" afterDir="false" />
+    <list default="true" id="bc1aab99-c14f-4071-abbc-6ff269dda62f" name="Changes" comment="автотесты закончены">
+      <change afterPath="$PROJECT_DIR$/~$ебования_SSO_для_тестирования.docx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/conftest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/page/locators.py" beforeDir="false" afterPath="$PROJECT_DIR$/page/locators.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/page/select_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/page/select_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_positive.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_positive.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ТестированиеB2CRT.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/ТестированиеB2CRT.xlsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -57,7 +51,7 @@
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -178,11 +172,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.pytest for test_negative.test_reg_user_invalid_confirm_password" />
-        <item itemvalue="Python tests.pytest for test_negative.test_reg_user_invalid_password" />
-        <item itemvalue="Python tests.pytest for test_positive.test_auth_user_valid_email" />
         <item itemvalue="Python tests.pytest for test_positive.test_reg_user_valid_data" />
+        <item itemvalue="Python tests.pytest for test_positive.test_auth_user_valid_email" />
+        <item itemvalue="Python tests.pytest for test_negative.test_reg_user_invalid_password" />
         <item itemvalue="Python tests.pytest for test_negative.test_reg_user_invalid_login" />
+        <item itemvalue="Python tests.pytest for test_negative.test_reg_user_invalid_confirm_password" />
       </list>
     </recent_temporary>
   </component>
@@ -224,7 +218,8 @@
       <workItem from="1680373213745" duration="3415000" />
       <workItem from="1680403695463" duration="23857000" />
       <workItem from="1680489769108" duration="6961000" />
-      <workItem from="1680533865689" duration="14967000" />
+      <workItem from="1680533865689" duration="15018000" />
+      <workItem from="1680609809611" duration="126000" />
     </task>
     <task id="LOCAL-00001" summary="предварительная загрузка файлов проекта">
       <created>1680267111656</created>
@@ -275,7 +270,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680448456327</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="автотесты закончены">
+      <created>1680590737697</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1680590737697</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -298,7 +300,8 @@
     <MESSAGE value="v1" />
     <MESSAGE value="final positive test" />
     <MESSAGE value="добавлены фикстуры и файл с тест-кейсами" />
-    <option name="LAST_COMMIT_MESSAGE" value="добавлены фикстуры и файл с тест-кейсами" />
+    <MESSAGE value="автотесты закончены" />
+    <option name="LAST_COMMIT_MESSAGE" value="автотесты закончены" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
