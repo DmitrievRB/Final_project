@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc1aab99-c14f-4071-abbc-6ff269dda62f" name="Changes" comment="Добавлен файл readme">
+    <list default="true" id="bc1aab99-c14f-4071-abbc-6ff269dda62f" name="Changes" comment="релиз 1">
+      <change beforePath="$PROJECT_DIR$/.idea/Final_project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Final_project.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/conftest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_negative.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_negative.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_positive.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_positive.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,23 +38,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/merlinrd/Documents/MyProject/Project&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/merlinrd/Documents/MyProject/Python_Training/Final_project",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\merlinrd\Documents\MyProject\Python_Training\Final_project\Doc" />
@@ -223,7 +221,9 @@
       <workItem from="1680489769108" duration="6961000" />
       <workItem from="1680533865689" duration="15018000" />
       <workItem from="1680609809611" duration="126000" />
-      <workItem from="1680609956983" duration="7791000" />
+      <workItem from="1680609956983" duration="8487000" />
+      <workItem from="1680663810458" duration="40000" />
+      <workItem from="1680869817286" duration="309000" />
     </task>
     <task id="LOCAL-00001" summary="предварительная загрузка файлов проекта">
       <created>1680267111656</created>
@@ -295,7 +295,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680612810146</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="релиз 1">
+      <created>1680624092488</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1680624092488</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -321,7 +328,8 @@
     <MESSAGE value="автотесты закончены" />
     <MESSAGE value="Добавлена документация по проекту" />
     <MESSAGE value="Добавлен файл readme" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавлен файл readme" />
+    <MESSAGE value="релиз 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="релиз 1" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
